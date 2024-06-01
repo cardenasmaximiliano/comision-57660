@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--css3-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet"> -->
+    <!--siempre nuestro css va a estar antes del cierre de head-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<!-- <style> 
+    css2 => tampoco se utiliza pero sacamos la sintaxis moderna
+    h1{
+        color: red;
+    }
+</style> -->
+<body>
+    <nav>
+        <ul class="navBar">
+            <li><a href="">inicio</a></li>
+            <li><a href="">inicio</a></li>
+            <li><a href="">inicio</a></li>
+        </ul>
+    </nav>
+    <!--la declaracion de css1 no se utiliza mas! solamente lo usamos a modo de ejemplo
+    <h1 style="color:blue;">clase de css</h1>-->
+    <h1>clase de css</h1>
+
+    <section>
+            <article>
+                <p>parrafo</p>
+            </article>
+    </section>
+    <section class="miPrimeraSeccion">
+        <!--
+            clases: identificadores que tienen la particularidad
+            de crear etiquetas que sean especiales.
+            Las clases se pueden repetir en diferentes 
+            lugares tantas veces como sea necesarias. 
+
+            clases:
+            
+            mi primera seccion
+            camelCase: miPrimeraSeccion
+            kebab: mi-primera-seccion   
+            snake_case: mi_primera_seccion
+            BEM: LO vamos a ver mas adelante
+            
+        -->
+        <article>
+            <p>parrafo</p>
+        </article>
+    </section>
+    <section>
+        <article>
+            <p>parrafo</p>
+        </article>
+</section>
+<section class="miPrimeraSeccion" id="atributoId">
+    <article>
+        <p>parrafo</p>
+    </article>
+</section>
+    <p>parrafo por fuera del section</p>
+</body>
+</html>

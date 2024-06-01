@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Reddit+Mono:wght@200..900&display=swap');
+
+/*
+    font-family: "LXGW WenKai Mono TC", monospace;
+     font-family: "Reddit Mono", monospace;
+
+*/
+
+@font-face {
+    font-family:"pepito" ;
+    src: url("../assets/typografias/Coffee-Spark.ttf");
+}
+
+
+/* h1{
+    color: green;
+}
+
+/* aca va un comentario */
+/*h1{
+    color: blueviolet;
+}
+h1{
+    color: red;
+} */
+
+p{
+    color: blue;
+}
+
+section{
+    background-color: lightcoral;
+}
+
+section p{
+    color: white;
+}
+
+section article p{
+    color: black;
+}
+
+.miPrimeraSeccion{
+    background-color: #c3de58dd;
+}
+
+.miPrimeraSeccion article p{
+    color: blue;
+}
+
+.miPrimeraSeccionNosotros{
+    background-color: lightblue;
+}
+
+/*** selector unico, ID ***/
+
+#atributoId{
+    background-color: aqua;
+}
+
+h1{
+    /*propiedade de texto*/
+    text-align: center;
+    text-decoration: center;
+    text-transform:capitalize;
+    text-shadow: -5px -5px 5px red;
+     /*horizontal vertical visibilidad color*/
+     
+    /*fuentes*/
+    font-size: 100px;
+    font-weight:lighter;
+    font-family: "pepito";
+
+}
+
+/**
+    px = es una medida que se utiliza en la creacion
+    de sitios webs.
+    Por defecto los navegadores toman
+    16px para las letras
+**/
+
+
+
+
+.navBar{
+    list-style: none;
+}
+.navBar li a{
+    text-decoration: none;
+    color: blue;
+}
