@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--heading tags, son fundamentales para marcar titulos dentro de nuestro sitio
+    y solamente contienen texto.
+    -->
+    <!-- <h1>titulo</h1> titulo principal del proyecto, solo 1 por html -->
+    <!-- <h2>titulo</h2> <!--de h2 a h6 pueden haber tantos como sean  
+                    sean necesarios siempre y cuando se respete la jerarquia-->
+    <!-- <h3>titulo</h3>
+    <h4>titulo</h4>
+    <h5>titulo</h5>
+    <h6>titulo</h6> -->
+    <header>
+        <nav> <!--etiqueta nav hace referencia a la barra 
+        de navegacion principal de mi sitio-->
+            <ul>
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="#">etiquetas</a></li>
+                <li><a href="./contactos.html">contactos</a></li>
+                <li><a href="./nosotros.html">nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>esto es etiquetas</h1>
+    </main>
+    <!-- <h1 id="irArriba">chevrolet</h1>
+        <h2>autos</h2>
+            <h3>cruze</h3>
+                <h4>sedan</h4>
+                <h4>hachback</h4>
+            <h3>onix</h3>
+        <h2>pickups</h2>
+            <h3>s10</h3>
+            <h3>terrablazer</h3> -->
+    
+    <!--listas-->
+    <!--listas ordenadas o order list-->
+    
+    <ol>
+        <li>comprar yerba</li>
+        <li>calentar agua</li>
+        <li>preparar el mate</li>
+        <li>cebar</li>
+    </ol>
+
+    <!--listas desordenadas-->
+
+    <ul>
+        <li>chocolinas</li>
+        <li>queso crema</li>
+        <li>dulce de leche</li>
+    </ul>
+
+    <!--listas de definicion= nos sirven si creamos indices o glosarios-->
+
+    <dl>
+        <dt>coderhouse</dt>
+        <dd>escuela que enseña programacion</dd>
+        <dt>maxi cardenas</dt>
+        <dd>un tipazo</dd>
+        <dt>tutor lucas</dt>
+        <dd>persona que gasta 300 lucas en rappi</dd>
+    </dl>
+
+    <!--enlaces
+    nos va a permitir a nosotros comunicarnos con otros sitios, elementos multimedia,
+    y otras carpetas o archivos dentro de mi sitio de mi sitio. Tambien
+    los enlaces me van a permitir o navegar entre partes de mi mismo HTML.
+    
+    etiquetas anchor
+    etiqueta ancla 
+    etiqueta A 
+
+         <a href=" 
+         VAN A PONER LA RUTA DE DONDE QUIEREN QUE REDIRECCIONE ">ACA PONEN
+            LO QUE QUIEREN QUE VEA EL USUARIO TEXTO O UNA IMAGEN.
+         </a>
+-->
+
+    <!-- ENLACE ABSOLUTO, ES EL QUE ME PERMITE A MI INTERACTUAR CON OTROS SITIOS WEBS  -->
+
+    <a href="https://www.coderhouse.com/latam" target="_blank">coderhouse</a>
+    <a href="https://www.facebook.com/" target="_blank">facebook</a>
+   
+   <!--enlaces internos
+    enlaces internos nos sirven para movernos dentro del mismo html o con otro selecciona una seccion especifica.
+
+    2 partes:
+    la etiqueta ancla emisora.
+    
+    una etiqueta cualquiera que funcione de receptora.
+    
+    <a href="#palabraClave"></a>
+
+    <p id="palabraClave"></p>
+-->
+    <a href="#irArriba">IR ARRIBA</a>
+
+    <!--enlaces relativos-->
+
+    <!--etiquetas multimedia-->
+    <img src="https://images.unsplash.com/photo-1714138665648-51e914cbaaab?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <img src="../assets/img/logo.png" alt="">
+
+    <audio src="../assets/audio/audio.mp3" controls></audio>
+    <video src="../assets/video/schnauzer.mp4" controls></video>
+
+    <!--frame => es la etiqueta que me trae fragmentos de otras paginas-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8AvC05kXS9I?si=PowLlFvXXEpCrGVn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ILzqn_z6SaI?si=4wtGOsAT5ciO9OqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4NSvVWoMswmJpMpSbgipYX?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6109.097673575999!2d-57.57264001443355!3d-37.99920560896908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1717260598898!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
