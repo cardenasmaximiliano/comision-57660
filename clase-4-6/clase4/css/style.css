@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+medidas
+    - relativas
+        dependen de otros factores, y son mas faciles en cuanto a su manipulacion a la hora de adaptarlas
+        a otros tamaños de pantalla.
+
+        %: porcentaje, 
+        rem: toma como padre o medida base a html
+        em:  toma como padre o medida base al contenedor
+        
+        
+        
+        vw=
+        vh=
+
+
+    -absolutas
+        son medidas fijas y no dependen de otros elemntos o de otro contextos. 
+        son medidas que proporcionan un control extramadamente preciso.
+
+        la medida absoluta por excelencia es el PX
+
+        el tamaño de tipografia 16px es el tamaño por defecto. 
+*/
+html{
+    /* font-size: 62.5%; 
+     */
+    /*
+    1 rem => 16px
+    2 rem =>  32px
+    
+    100% => 16px =>1rem
+
+    62.5% => 10px => 1rem
+
+    */
+    font-size: 1rem;
+}
+
+.cuadrado{
+    /*
+    ancho => width: 
+    alto => height: 
+    */
+    width: 100%;
+    height: 18.75rem;
+    background-color: lightblue;
+}
+
+
+.em-contenedor{
+    font-size: 17px;
+    width: 600px;
+    background-color: lightblue;
+    height: 18.75rem;
+    overflow:scroll}
+
+
+.em-contenedor p{
+    font-size: 2em;
+}
+
+
+.contenedor-imagen{
+    width: 100%;
+    height: 31.25rem;
+    background-image: url("../assets/img/imagenes.jpg");
+    background-position: center center;
+    background-size: 100% 100%!;
+    background-repeat: no-repeat;
+}
+
+/*
+box modeling
+    -modelo de caja: todos los elementos HTML poseen un espacio interno un limite y un espacio externo.
+
+
+
+**/
+
+.cuadrado button{
+    /* padding: 1.25rem; */
+    /* padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 25px; */
+    /* padding: 30px 0px 10px 5px ; */
+    padding: 30px 40px; /*me permite trabajar sobre ejes.*/
+    /*
+    border es una propiedad que me permite estilar los bordes
+        width: que nos va a dar el tamaño
+        style: que va a dar el estilo del borde
+        color: que va a dar el color
+    */
+    
+    /* border: .25rem double blue ; 
+    */
+    border: none;
+    border-bottom: 2px solid black;
+    /* margin: 1.875rem; */
+    /* margin-top: 20px; */
+    margin: 5px 10px ;
+    border-radius: 10px 50% 5px 10px;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.573);
+}
+
+
+.position div{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(162, 252, 77);
+    margin: 1.25rem;
+}
+
+.position .position-prueba{
+    background-color: lightcoral;
+   position: relative;
+    /*top:  ;
+    right: ;
+    bottom:200px ;
+    left: 100px; */
+}
+
+.position .position-prueba p{
+/*
+position absolute siempre toma como padre a la etiqueta body
+*/
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

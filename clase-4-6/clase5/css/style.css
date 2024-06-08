@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-index{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-index a img{
+    width: 18.75rem;
+}
+.navbar{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-right: 1.25rem;
+}
+.navbar li a{
+    font-size: 1.5625rem;
+    text-decoration: none;
+}
+
+.section-principal{
+    background-image: url("https://www.comeros.com.ar/wp-content/uploads/2022/10/500_500-19.jpg");
+    background-repeat: no-repeat;
+    background-position: center 60%;
+    width: 100%;
+    height: 500px;
+}
+
+.section-principal div{
+    width: 40%;
+}
+
+
+.section-productos div{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+/*
+    etiquetas de linea: solamente van ocupar el espacio del contenedor
+    etiquetas de bloque: ocupan el 100% del ancho de la pantalla
+
+    display: me permite modificar el estado natural de la etiqueta. 
+
+*/
+.productos-contenedor{
+    width: 100%;
+    /* height: 500px; */
+    background-color: lightgray;
+    display: flex;
+
+    /*
+    flex funciona gracias a 2 propiedades importantes
+    flex-direction: me orienta los elementos hijos por defecto se ponen en fila.
+    flex-wrap: genera la flexibilidad de los hijos, si ponemos flex-wrap: los elementos cuando
+    no encuentren espacio en la pantalla se van a poner uno debajo del otro
+
+    **/
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* justify-content: center;
+    align-items: center; */
+    gap: 1.875rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-producto{
+    background-color: rgb(202, 190, 176);
+    width: 15.625rem;
+    height: 18.75rem;
+
+    border-radius: .625rem;
+}
+
+.card-producto .card-img{
+    width: 100%;
+    height: 60%;
+}
+
+.card-producto div img{
+    width: 100%;
+    height: 100%;
+}
+
+.pepito{
+    background-color: blue;
+    /* align-self:flex-start ; */
+    order: 3;
+}
+
+.pepito2{
+    background-color: blueviolet;
+    /* align-self: flex-end; */
+    order: 4;
+}
+
+.pepito3{
+    background-color: bisque;
+    order: 1;
+}
+
+.pepito4{
+    order: 2;
+}
+/***/
+
+/* footer a{
+    display: block;
+} */
