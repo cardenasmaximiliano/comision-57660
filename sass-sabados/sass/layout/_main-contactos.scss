@@ -1,0 +1,24 @@
+.section-1{
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+
+.section2{
+    @extend .section-1;
+    text-align: right;
+}
+
+.section3{
+    @extend .section2;
+    color: red;
+
+}
+
+
+.section4{
+    @include grid(repeat(4,1fr),repeat(3,1fr),center,"c1 c1 c1 c1" "c2 c2 c2 c2""c3 c3 c3 c3")
+}

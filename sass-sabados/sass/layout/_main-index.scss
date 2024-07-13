@@ -1,0 +1,19 @@
+.section-principal{
+    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        text-align: center;
+    }
+    div{
+        width: 500px;
+        p{
+            font-size: .9375rem;
+        }
+        button{
+            padding: 20px 30px;
+            border: 1px solid black;
+        }
+    }
+}

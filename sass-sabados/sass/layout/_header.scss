@@ -1,0 +1,25 @@
+
+header{
+    background-color: map-get($colores , color1 );
+    @include flex(column,wrap,space-between,none,1.25rem);
+    p{
+        color: map-get($colores , color2 );
+        font-size: map-get($font-size, m );
+    }
+    nav{
+        .navbar{
+            @include flex(row,wrap,center,center,1.5625rem);
+            gap: 1.25rem;
+            li{
+                a{
+                    background-color: rgb(253, 253, 253);
+                    text-decoration: none;
+                    color: map-get($colores , color2 );
+                    &:hover{
+                        background-color:map-get($colores , color3 ) ;
+                    }
+                }
+            }
+        }
+    }
+}

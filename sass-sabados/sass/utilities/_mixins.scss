@@ -1,0 +1,27 @@
+/**
+mixin => es un bloque de codigo css, que suele hacer referencia
+a un conjunto de propiedades.
+
+nosotros al mixin lo podemos trabajar de manera estatica
+o dinamica.
+**/
+
+
+@mixin flex($direction,$wrap,$jusfity,$align,$gap){
+    
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $jusfity;
+    align-items: $align;
+    gap: $gap;
+}
+
+
+@mixin grid($col,$row,$justify,$areas){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows:$row ;
+    justify-content:$justify ;
+    grid-template-areas:$areas ;
+}

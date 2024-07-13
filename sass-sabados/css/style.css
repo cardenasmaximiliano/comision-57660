@@ -1,0 +1,98 @@
+/**primero siempre las utilites*/
+/*
+variable => es un espacio de memora reservada, 
+la cual va a alojar un tipo de dato.
+(numero, boleano, string, function, objeto..)
+css => variable va a guardar un tipo de valor, 
+de una propiedad
+
+la variable se crea con un signo $ nombre : valor ; 
+*/
+/**
+maps o mapas son colecciones de valores
+
+
+*/
+/**
+mixin => es un bloque de codigo css, que suele hacer referencia
+a un conjunto de propiedades.
+
+nosotros al mixin lo podemos trabajar de manera estatica
+o dinamica.
+**/
+/*segundo las bases**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* los layouts**/
+header {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: none;
+  gap: 1.25rem; }
+  header p {
+    color: blue;
+    font-size: 28px; }
+  header nav .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem;
+    gap: 1.25rem; }
+    header nav .navbar li a {
+      background-color: #fdfdfd;
+      text-decoration: none;
+      color: blue; }
+      header nav .navbar li a:hover {
+        background-color: yellow; }
+
+.section-principal {
+  background-color: salmon;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section-principal h1 {
+    text-align: center; }
+  .section-principal div {
+    width: 500px; }
+    .section-principal div p {
+      font-size: .9375rem; }
+    .section-principal div button {
+      padding: 20px 30px;
+      border: 1px solid black; }
+
+.section-1, .section2, .section3 {
+  background-color: lightblue;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black; }
+
+.section2, .section3 {
+  text-align: right; }
+
+.section3 {
+  color: red; }
+
+.section4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  grid-template-areas: "c1 c1 c1 c1" "c2 c2 c2 c2" "c3 c3 c3 c3"; }
+
+/**componentes*/
+.card-container {
+  display: flex; }
+  .card-container .card {
+    width: 500px;
+    height: 600px; }
+
+/* mediaquery**/
